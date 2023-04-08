@@ -1,0 +1,52 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: #0a1f30;
+}
+h1, h3{
+    color: aliceblue;
+    font-family: 'consolas';
+}
+
+#game{
+    width:400px;
+    height:500px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin:auto;
+    overflow: hidden;
+    background-color: aqua;
+}
+#block{
+    width:50px;
+    height:500px;
+    background-color: #000;
+    position: relative;
+    border-radius: 4px;
+    left:400px;
+    animation:block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:400px;}
+    100%{left:-50px;}
+}
+#hole{
+    width:50px;
+    height:150px;
+    background-color: aqua;
+    position: relative;
+    left:400px;
+    top:-500px;
+    animation:block 2s infinite linear;
+}
+#character{
+    width:20px;
+    height:20px;
+    position: absolute;
+    background-color: blue;
+    top:100px;
+    border-radius: 50%;
+}
