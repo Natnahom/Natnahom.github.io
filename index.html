@@ -33,15 +33,21 @@
     <!-- Close nav -->
     <header id="banner">
         <div class="banner-text">
-            <h1><span>I</span>
+            <!--<img src="images/logo.png">-->
+            <h1 class="object" data-value="3"><span>I</span>
                 <span>am</span>
                 <span>a</span>
                 <span>web</span>
-                <span>developer</span></h1>
-            <p>I can make you a world class website with amazing animations and lots of other features</p>
+                <span>developer</span>
+            </h1>
+            <p class="object" data-value="3">I can make you a world class website with amazing animations and lots of other features</p>
             <div class="banner-btn">
                 <a href="index2.html" class="btn btn-default">My Works &rarr;</a>
             </div>
+            <img src="images/1.png" id="a" class="object" data-value="-2" alt="">
+            <img src="images/2.png" id="b" class="object" data-value="6" alt="">
+            <img src="images/4.png" id="c" class="object" data-value="4" alt="">
+            <img src="images/6.png" id="d" class="object" data-value="-6" alt="">
         </div>
     </header>
     <!-- Close header -->
@@ -203,6 +209,20 @@
              }
          })
 
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".object").forEach(function(move){
+
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 100;
+                var y = (e.clientY * moving_value) / 100;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
     </script>
     <script src="script.js"></script>
 </body>
