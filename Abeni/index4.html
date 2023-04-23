@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="z-icon" href="images/logo1.png">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8693f8f216.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="mov-logo">
+        <a href="index.html"><img src="images/full logooo.png"></a>
+    </div>
+    <section class="header">
+        <div class="cont box1">
+            Call us with our phone number<br><br><br><br><br><br><br>
+            <i class="fa-solid fa-phone"></i>
+            +251900000000
+        </div>
+        <div class="cont box2">
+            Send us an E-mail<br>
+            <i class="fa-solid fa-envelope"></i></i>
+            <form action="" method="POST">
+                <div class="group">
+                    <input type="text" id="name" name="Name" class="control" placeholder="Enter name" required>
+                </div>
+                <div class="group">
+                    <input type="email" id="email" name="Email" class="control" placeholder="Enter email" required>
+                </div>
+                <div class="group">
+                    <input type="text" id="subject" name="Subject" class="control" placeholder="Enter subject" required>
+                </div>
+                <div class="group">
+                    <textarea name="Message" id="message" class="control" cols="30" rows="10" placeholder="Message"></textarea>                        
+                </div>
+                <div class="group">
+                    <button type="submit" id="btn" class="btn btn-default">Send</button>                    
+                </div>
+            </form>
+        </div>
+        <div class="cont box3">
+            Follow us on our social media<br><br><br>
+            <a href="#">Telegram <i class="fa-brands fa-telegram"></i><br><br></a>
+            <a href="#">YouTube <i class="fa-brands fa-youtube"></i><br><br></a>
+            <a href="#">Twitter <i class="fa-brands fa-twitter"></i><br><br></a>
+            <a href="#">Facebook <i class="fa-brands fa-facebook"></i><br><br></a>
+            <a href="#">TikTok <i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </section>
+    <script src="script4.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <!--For preloader-->
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display="none";
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+/*the first page*/
+.home1{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,10,0.6),rgba(0,0,10,0.6)), url(images/bach-G-img.png);
+    background-size: cover;
+    background-color: #010101;
+    background-position: center;
+    position: relative;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logos img{
+    width: 350px;
+}
+
+.mov-logo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    position: fixed;
+    margin: 30px;
+}
+.mov-logo img{
+    width: 160px;
+    height: 60px;
+}
+
+.nav-links{
+    float: center;
+    text-align: center;
+    transition: 1s;
+    height: 100px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: rgb(35, 145, 83);
+    font-size: 25px;
+    font-family: jost;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 40px;
+    transition: 1s;
+}
+.nav-links:hover{
+    background-color: #01d449;
+    transition: 1s;
+    width: 100%;
+    height: 100px;
+}
+.nav-links ul li:hover{
+    background-color: #444444;
+    transform:scale(1.1);
+    transition: 1s;
+    margin-right: 100px;
+    font-size: 30px;
+}
+
+.nav-links ul li a:hover{
+    font-size: 40px;
+    transition: 1s;
+}
+
+.flyy{
+    font-size: 50px;
+    color: #01d449;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: jost;
+}
+
+.flyy .f{
+    margin-right: 20px;
+}
+
+.f1{
+    animation: slide-down 1s ease-out;
+}
+.f2{
+    animation: slide-down 1.3s ease-out;
+}
+.f3{
+    animation: slide-down 1.6s ease-out;
+}
+.f4{
+    animation: slide-down 1.9s ease-out;
+}
+@keyframes slide-down {
+    from{transform: translateY(-600px);}
+    to{transform: translateY(0px);}
+}
+
+@media(max-width: 767px){
+    .logos img{
+        width: 250px;
+    }
+    .nav-links ul li:hover{
+        background-color: #444444;
+        transform: scale(1.2);
+        font-size: 20px;
+        transition: 1s;
+        margin-right: 50px;
+    }
+    
+    .nav-links ul li a{
+        font-size: 16px;
+    }
+    .nav-links ul li{
+        margin: 16px;
+    }
+    .nav-links ul li a:hover{
+        font-size: 20px;
+    }
+    .home2 .game-blocks{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        margin-top: 70px;
+    }
+    .game-blocks .a{
+        margin-top: 15px;
+    }
+    .game-blocks .b{
+        margin-top: 15px;
+    }
+    .game-blocks .c{
+        margin-top: 15px;
+    }
+    .home3 .game-blocks2{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        margin-top: 70px;
+    }
+    .game-blocks2 .a1{
+        margin-top: 15px;
+    }
+    .game-blocks2 .b1{
+        margin-top: 15px;
+    }
+    .game-blocks2 .c1{
+        margin-top: 15px;
+    }
+    .title2 h1{
+        margin-bottom: 150px;
+    }
+    
+}
+/*the second page*/
+
+.home2{
+    background-color: #010101;
+    min-height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-blocks{
+    display: flex;
+}
+
+.game-blocks .a{
+    width: 250px;
+    height: 250px;
+    background-image: url("images/game_img1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:1px solid #fff;
+    border-radius:15px;
+    transition: 1s;
+    margin-right: 20px;
+}
+.game-blocks .b{
+    width: 250px;
+    height: 250px;
+    background-image: url("images/comming-soon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:1px solid #fff;
+    border-radius:15px;
+    transition: 1s;
+    margin-right: 20px;
+}
+.game-blocks .c{
+    width: 250px;
+    height: 250px;
+    background-image: url("images/comming-soon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:1px solid #fff;
+    border-radius:15px;
+    transition: 1s;
+}
+.game-blocks .a:hover{
+    transform:scale(1.3);
+    transition: 1s;
+}
+.game-blocks .b:hover{
+    transform:scale(1.3);
+    transition: 1s;
+}
+.game-blocks .c:hover{
+    transform:scale(1.3);
+    transition: 1s;
+}
+.home3{
+    background-color: #010101;
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title2 h1{
+    color: #01d449;
+    background-color: #010101;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: -50px;
+    font-family: jost;
+}
+.game-blocks2{
+    display: flex;
+}
+.game-blocks2 .a1{
+    width: 250px;
+    height: 250px;
+    background-image: url("images/flower1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    margin-right: 20px;
+}
+.game-blocks2 .b1{
+    width: 250px;
+    height: 250px;
+    background-image: url("images/heart1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    margin-right: 20px;
+
+}
+.game-blocks2 .c1{
+    width: 250px;
+    height: 250px;
+    background-image: url("images/diamond1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+.game-blocks2 .a1:hover{
+    transform:scale(1.3);
+    transition: 1s;
+}
+.game-blocks2 .b1:hover{
+    transform:scale(1.3);
+    transition: 1s;
+}
+.game-blocks2 .c1:hover{
+    transform:scale(1.3);
+    transition: 1s;
+}
+
+.home4{
+    min-height: 80vh;
+    background-color: #010101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home4 .paragragh{
+    width: 500px;
+    height: 300px;
+    font-family: monospace;
+    color: #01d449;
+    font-size: 20px;
+}
+.home4 .paragragh a{
+    color: blue;
+}
+
+/*---preloader---*/
+#preloader{
+    background:#000 url(images/loader1.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.copyright1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #012121;
+    text-align: center;
+}
+.copyright1 p{
+    color: antiquewhite;
+    font-size: 13px;
+}
+.copyright1 a{
+    color: antiquewhite;
+}
+.copyright1 .fa-regular{
+    font-size: 10px;
+}

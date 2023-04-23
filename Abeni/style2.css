@@ -1,0 +1,290 @@
+body{
+    background-color: #010101;
+    background-image: linear-gradient(rgba(0,0,10,0.6),rgba(0,0,10,0.6)), url(images/back-G-diam.png);
+    background-size: 50%;
+    background-position: center;
+    position: relative;
+    font-family: jost;
+}
+/*The top navigation*/
+.mov-logo {
+    width: 10%;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 30px;
+}
+.mov-logo img{
+    width: 160px;
+    height: 60px;
+}
+.topnavig{
+    overflow:hidden;
+    background-color: #010101;
+    padding: 10px;
+}
+  
+.topnavig a{
+    float:left;
+    display:block;
+    color: #01d449;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+.topnavig a span{
+    transition: 1s;
+}
+.topnavig a span:hover{
+    font-size: 50px;
+    transition: 1s;
+}
+  
+.topnavig .search-c{
+    float:right;
+    margin-top: 10px;
+}
+  
+form{
+    background-color:#151f30;
+    width:300px;
+    height:43px;
+    border-radius: 50px;
+    display:flex;
+    align-items:center;
+}
+input {
+    all:unset;
+    font:15px system-ui;
+    color:#fff;
+    height:100%;
+    width:100%;
+    padding:6px 9px;
+}
+/*The list of games*/
+.game-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 35px;
+}
+.a{
+    width: 250px;
+    height: 300px;
+    margin-inline: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 1s;
+    overflow: hidden;
+    position: relative;
+}
+.game-block .a .aa{
+    height: 20%;
+    padding-top: 100%;
+    background-image: url(images/pong-img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    border-radius:5px;
+    background-color: #010101;
+}
+
+.game-block .a .ab{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ac{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ad{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .aa2{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ab2{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ac2{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ad2{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .aa3{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ab3{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ac3{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ad3{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .aa4{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ab4{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ac4{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a .ad4{
+    height: 20%;
+    padding-top: 100%;
+    background-image: linear-gradient(rgba(80,80,80,0.5),rgba(80,80,80,0.5)), url(images/comming-soon.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius:5px;
+}
+.game-block .a a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #01d449;
+}
+
+.a:hover{
+    transform: scale(1.2);
+}
+
+.layer{
+    background: transparent;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(126,120,120,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 400;
+    color: #01d449;
+    font-size: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5%;
+}
+.layer:hover h3{
+    bottom: 10%;
+    opacity: 1;
+}
+@media(max-width:767px){
+    .game-block{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        float: right;
+    }
+    .a{
+        margin-top: 120px;
+    }
+}
+
+/*---preloader---*/
+#preloader{
+    background:#000 url(images/loader1.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
