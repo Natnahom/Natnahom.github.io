@@ -9,7 +9,6 @@ body{
 /*The top navigation*/
 .mov-logo {
     width: 10%;
-    height: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,6 +267,9 @@ input {
     opacity: 1;
 }
 @media(max-width:767px){
+    .mov-logo{
+        margin-left: 70px;
+    }
     .game-block{
         display: block;
         align-items: center;
