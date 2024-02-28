@@ -1,0 +1,96 @@
+body{
+    margin: -8px;
+    background-image: url(images/cont.png);
+}
+
+  #contact {
+    margin: 0px 100px;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .contact-header h3 {
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    color: white;
+    display: inline-block;
+    border-bottom: 1px solid #333;
+    padding-bottom: 6px;
+  }
+  
+  .contact-header p {
+     margin-top: 16px;
+     font-size: 25px;
+     color: white;
+  }
+  
+  form {
+    text-align: right;
+  }
+  
+  .group {
+    margin-bottom: 15px;
+  }
+  
+  .control {
+    display: block;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid silver;
+    width: 100%;
+  }
+  
+  .toggle {
+    position: fixed;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--colorGreen);
+    color: var(--colorWhite);
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 20px 22px;
+    color: White;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    line-height: 0;
+    outline: none;
+    cursor: pointer;
+  
+  }
+  
+  .btn-default {
+    background: #d80808;
+  }
+  @media (max-width: 765px){
+  
+    .col-6 {
+        float: none;
+        width: 100%;
+    }
+    form {
+        margin-top: 25px;
+    }
+
+    .contact-header h3{
+        font-size: 20px;
+    }
+    .contact-header p {
+        margin-top: 16px;
+        font-size: 15px;
+        color: white;
+     }
+  
+  }
