@@ -140,7 +140,6 @@ p{
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
-  overflow: scroll;
 }
 
 .row a {
@@ -149,6 +148,8 @@ p{
 
 .course-col{
   flex-basis: 31%;
+  width: 350px;
+  height: 500px;
   background: white;
   border-radius: 13px 13px 30px 30px;
   margin-bottom: 5%;
@@ -171,12 +172,6 @@ p{
   color: white;
   font-size: 70px;
   font-family: "DM serif display";
-}
-
-.purchase{
-  background-color: #d80808;
-  border-radius: 0 0 30px 30px;
-  width: 100%;
 }
 
 .course-col img{
@@ -213,8 +208,11 @@ h3{
 
   .row{
       flex-direction: column;
+    }
+    .course-col{
+      margin-left: 20px;
+    }
   }
-}
 
   footer {
     background-color: #333;
