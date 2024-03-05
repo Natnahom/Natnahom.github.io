@@ -57,16 +57,13 @@ body{
     background-size: cover;
     margin-right: 20px;
 }
-.f video{
-    width: 300px;
-    height: 350px;
-}
 .f{
+    background-image: url(images/artauctionImg.png);
     background-position: center;
     background-size: cover;
     margin-right: 20px;
-    background-color: black;
 }
+
 .cont a{
     text-decoration: none;
     color: aliceblue;
