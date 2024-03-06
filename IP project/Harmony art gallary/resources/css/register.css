@@ -19,11 +19,12 @@ body{
 .container h2, p{
     color: aliceblue;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container label{
     color: aliceblue;
-    text-align: left;
+    font-family: 'Poppins';
 }
 
 #textBox1, #textBox2, #pass, #confP{

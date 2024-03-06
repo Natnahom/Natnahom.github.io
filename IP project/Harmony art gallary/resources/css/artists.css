@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -36,6 +37,14 @@ body {
     object-fit: cover;
   }
   
+  h1, h2, h3{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  p{
+    font-family: 'Poppins';
+  }
+
   footer {
     background-color: #333;
     color: #fff;

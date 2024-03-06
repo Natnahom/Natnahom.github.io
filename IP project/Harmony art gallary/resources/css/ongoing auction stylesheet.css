@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 ::-webkit-scrollbar {
   width: 15px;
@@ -45,6 +46,7 @@
   .nav-bar-items{
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
     padding-right: 100px;
     text-align: center;
     text-decoration: none;
@@ -81,7 +83,6 @@
     background-color: green;
     cursor: pointer;
     font-weight: bold;
-    
   }
 
   .sign-in{
@@ -104,7 +105,6 @@
     max-width: 30px;
     max-height:30px;
     border-radius: 50%;
-    object-fit: cover;
   }
 
   .fa{
@@ -113,7 +113,6 @@
     font-size: 45px;
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
   }
   
   .fa:hover{
@@ -135,10 +134,12 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Poppins';
   }
 
   #labForTB{
     margin-left: 20px;
+    font-family: 'Poppins';
   }
 
   #textBox{
@@ -182,12 +183,14 @@
    font-size: 18px;
    word-spacing: 3px;
    text-align: center;
+   font-family: 'Poppins';
   }
 
   .auction-details h2 {
    margin-bottom: 10px;
    font-size: 30px;
    text-align: center;
+   font-family: 'Open Sans', sans-serif;
   } 
 
   .auction-details button{
