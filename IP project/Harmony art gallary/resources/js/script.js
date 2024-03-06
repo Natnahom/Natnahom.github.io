@@ -1,6 +1,7 @@
 const passwordBid = "1357";
 const passwordUp = "2468";
 
+// Gives the user their bidding or uploading password
 function func1(){
     var textBox = document.getElementById('textBox').value;
 
@@ -13,56 +14,74 @@ function func1(){
     }
 }
 
+// Function that checks if the bidding password is correct and 
+// when Bid button is clicked it has a functionality that allows the user to bid and also
+// checks if the bid money the user entered is higher than the current bid amount
+
+var previousBid=0;
 function func2(){
     var textBox = document.querySelector("#textBox").value;
 
     if (textBox == passwordBid) {
         var artN = window.prompt("Enter the name in the brackets? ");
         var bid1 = window.prompt("How much money would you like to bid? "+"\nPlease double check your bid!");
-        // var artChar3 = artN[3];
-        // var price = document.querySelector("#p"+artChar3).value;
-        // price = Number(price);
-
+        var artChar3 = artN[3];
+        var artChar4 = artN[4];
+        
         bid1 = Number(bid1);
-        
-        if (bid1 < 1500) {
-            alert("Your bid cannot be less than the current bid!");
-        }
-        
-        else{
-            alert("You bid $"+bid1);
-            document.querySelector(`#${artN}`).innerHTML = "Current Bid: $"+bid1;
-
-            // setTimeout(function func3(){
-            //     if(attempt < 3){
-            //         alert("Another customer bid $"+(bid1+bid2));
-            //         document.querySelector(`#${artN}`).innerHTML = "Current Bid: $"+(bid1+bid2);
-            //     }
-            // }, 2000);
-
-            // if (attempt > 2){
-            //     alert("You can't outbid your self more than 2 times!");
-            //     alert("Congratulations the other bidder retracted their bid!"+"\nYou bought the art for $"+bid1);
-            //     document.querySelector(`#${artN}`).innerHTML = "$"+bid1+" SOLD!!";
-            //     if (artN.length > 4){
-            //         document.querySelector(`#btn${artN[3]}${artN[4]}`).style.display = "none";
-            //     }
-            //     else{
-            //         document.querySelector(`#btn${artN[3]}`).style.display = "none";
-            //     }
-            // }
+        if (artN.length <= 4) {
+            var labelEle = document.getElementById(`p${artChar3}`);
+            var price;
             
+            if (labelEle) {
+                price = parseInt(labelEle.innerHTML);    
+              }
+             else{
+                 price = previousBid;
+             }
+
+            if (bid1 <= price || bid1 === 0) {
+                alert("Your bid cannot be less than the current bid!");
+            }
+
+            else{
+                alert("You bid $"+bid1);
+                document.querySelector(`#${artN}`).innerHTML = "Current Bid: $"+bid1; 
+            }
         }
+    
+        else if (artN.length > 4){
+            var labelEle2 = document.getElementById(`p${artChar3}${artChar4}`);
+            var price2
+
+            if (labelEle2) {
+                price2 = parseInt(labelEle2.innerHTML);    
+            }
+            else{
+                price2 = previousBid;
+            }
+
+            if (bid1 <= price2 || bid1 === 0) {
+                alert("Your bid cannot be less than the current bid!");
+            }
+
+            else{
+                alert("You bid $"+bid1);
+                document.querySelector(`#${artN}`).innerHTML = "Current Bid: $"+bid1;
+            }
+        }
+        
     }
         
     else {
         alert("Invalid password!");
     }
-    
+
+    previousBid = bid1;
 }
 
 // Function for checking if the password is correct when user is uploading a file
-function func4(){
+function func3(){
     var textBox = document.getElementById('textBox').value;
     var Fullname = document.getElementById("Fullname").value;
     var StDate = document.getElementById("StDate").value;
@@ -77,7 +96,7 @@ function func4(){
 }
 
 // Function for checking if password and confirm password match
-function func5(){
+function func4(){
     var userName = document.getElementById("textBox2").value;
     var pass = document.getElementById("pass").value;
     var confP = document.getElementById("confP").value;
@@ -92,7 +111,7 @@ function func5(){
 
 
 // Set the countdown date and time
-var countdownDate = new Date("March 6, 2024 00:00:00").getTime();
+var countdownDate = new Date("March 10, 2024 16:08:00").getTime();
 
 // Update the countdown every second
 var countdown = setInterval(function() {
@@ -113,40 +132,13 @@ var countdown = setInterval(function() {
   if (distance < 0) {
     clearInterval(countdown);
      document.getElementById("countdown").innerHTML = "Bidding ended!";
+     var sold = document.getElementsByClassName("sold");
+     
      for (let i = 1; i <= 20; i++){
         document.getElementById(`btn${i}`).style.display = "none";
-     }
+        for (var j = 0; j < 20; j++){
+                sold[j].innerHTML = "SOLD!";
+        }
+    }
   }
 }, 1000);
-
-// // Set the countdown date and time
-// var countdownDate = new Date("March 6, 2024 00:00:00").getTime();
-
-// // Update the countdown every second
-// var countdown = setInterval(function() {
-//   var now = new Date().getTime();
-//   var distance = countdownDate - now;
-
-//   // Calculate days, hours, minutes, and seconds
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-//   // Display the countdown
-//   var countdownElements = document.getElementsByClassName("countdown");
-//   for (var i = 0; i < countdownElements.length; i++) {
-//     countdownElements[i].innerHTML = days + "d " + hours + "h "
-//       + minutes + "m " + seconds + "s ";
-//   }
-
-//   // If the countdown is over, display a message
-//   if (distance < 0) {
-//     clearInterval(countdown);
-//     for (var i = 0; i < countdownElements.length; i++) {
-//         countdownElements[i].innerHTML = "Countdown expired!";
-//         document.getElementsByClassName("view-auction")[i].style.display = "none";
-//     }
-//   }
-// }, 1000);
-// // }

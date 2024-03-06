@@ -51,6 +51,17 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 38px;
   }
+
+  .nav-bar h1 span{
+    color: green;
+    transition: 1s;
+  }
+
+  .nav-bar h1 span:hover{
+    font-size: 42px;
+    transition: 1s;
+  }
+
   .nav-bar h4{
     display: flex;
     align-items: center;
@@ -89,7 +100,7 @@
     transition: all 0.5s ease-in-out;
   }
 
-  .sign-in, .sign-up{
+  .sign-in, .sign-up, .learn-more{
     position: relative;
     color: white;
     padding: 5px 10px;
@@ -101,7 +112,7 @@
     
   }
 
-  .sign-in{
+  .sign-in, .learn-more{
     margin-right: 10px;
     text-align: center;
 
@@ -111,6 +122,12 @@
     color: green;
     background-color: white;
     transition: 0.5s;
+  }
+  .learn-more:hover{
+    color: green;
+    background-color: white;
+    transition: 0.5s;
+    border: 1px solid green;
   }
 
   #pp{
@@ -122,6 +139,39 @@
     max-height:30px;
     border-radius: 50%;
     object-fit: cover;
+  }
+
+  .cont {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    height: 70vh;
+  }  
+
+  .cont h1 {
+    color: #fff;
+    background-color: #333;
+    font-size: 32px;
+    margin-bottom: 40px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 90px;
+  }
+  
+  .cont h1:hover{
+    background-color: #333;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  
+  .cont p {
+    line-height: 1.6;
+    margin-bottom: 40px;
   }
 
   .uploadSect{
@@ -183,22 +233,38 @@
   #btn{
     transform: scale(1.3);
     color: #fff3f3;
-    background-color: rgb(75, 231, 75);
+    background-color: green;
     border-radius: 10px;
+    border: none;
     cursor: pointer;
     width: 50px;
+    transition: 0.5s;
 }
 #btn2{
     transform: scale(1.3);
     color: #fff3f3;
-    background-color: rgb(240, 50, 50);
+    background-color: red;
     border-radius: 10px;
+    border: none;
     cursor: pointer;
     width: 50px;
+    transition: 0.5s;
 }
 
-#btn:hover, #btn2:hover{
+#btn:hover{
     transform: scale(1.4);
+    border: 1px solid green;
+    background-color: #fff;
+    color: green;
+    transition: 0.5s;
+}
+
+#btn2:hover{
+    transform: scale(1.4);
+    border: 1px solid red;
+    background-color: #fff;
+    color: red;
+    transition: 0.5s;
 }
 
 .foot{

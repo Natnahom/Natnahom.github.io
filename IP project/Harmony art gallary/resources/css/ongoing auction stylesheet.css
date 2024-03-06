@@ -164,6 +164,8 @@
    align-items: flex-start;
    flex-direction: column;
    text-align: center;
+   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+
   }
 
   .image-with-details {
@@ -275,12 +277,18 @@
       top: 40px;
       right: 260px;
     }
-  
+
     .Auctions{
       display: block;
       position: relative;
       left: 30%;
     }
+
+    .images{
+      width: 250px;
+      margin-bottom: 20px;
+    }
+
     .foot{
       display: block;
       height: 18vh;

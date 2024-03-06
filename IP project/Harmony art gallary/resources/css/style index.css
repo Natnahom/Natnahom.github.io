@@ -19,6 +19,8 @@ h1{
     width: 360px;
     position: relative;
     top: 150px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+
 }
 
 .btnAll{
@@ -38,7 +40,7 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    transition: 1.2s;
+    transition: 0.5s;
 }
 
 a{
@@ -49,6 +51,6 @@ a{
     background-color: #fff;
     color: green;
     transform: scale(1.2);
-    transform: rotateX(360deg);
-    transition: 1.2s;
+    transform: rotateZ(360deg);
+    transition: 0.5s;
 }
