@@ -20,6 +20,8 @@ body {
   #artists1 img, #artists2 img{
     height: 200px;
     width: 50px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   #artists1 .artwork, #artists2 .artwork{
