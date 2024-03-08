@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" type="x-icon" href="images/logo2.png">
+  <link rel="shortcut icon" type="x-icon" href="images/logo.png">
   <title>Afrisource Minerals and Farm PLC</title>
   <script src="https://kit.fontawesome.com/8693f8f216.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="images/logo3.png"></a>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="index2.html">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+    
+    <nav id="nav">
+     <ul class="left-ul">
+         <li><a href="index.html"><img src="images/logo.png" alt="logo" width="20px" height="20px"></a></li>
+     </ul>
+     <ul class="right-ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="index2.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+     </ul>
     </nav>
+    <a href="index.html"><img src="images/logo full.png"></a>
+
   </header>
   
   <hr>
@@ -148,23 +155,64 @@
 
 <footer>
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or inquiries, please contact us at <br><br>
+    <div class="cont1">
+    <h2><a href="contact.html">Contact Us</a></h2>
+    <p>If you have any questions or inquiries, please contact us at <br><br><br>
+          
+      <i class="fa-solid fa-mobile-screen-button"></i>+251910643449<br>
+      <i class="fa-solid fa-mobile-screen-button"></i>+251911707352<br>
+      <i class="fa-solid fa-mobile-screen-button"></i>+251912130939<br><br>
+          <br><i class="fa-solid fa-envelope"></i>afrisourceminerals@gmail.com<br><br>
           <a href="index2.html"><i class="fa fa-facebook"></i></a>
           <a href="index2.html"><i class="fa fa-twitter"></i></a>
           <a href="https://www.instagram.com/afrisource_minerals/"><i class="fa fa-instagram"></i></a>
           <a href="index2.html"><i class="fa-brands fa-youtube"></i></a>
-          <a href="index2.html"><i class="fa-brands fa-telegram"></i></a><br><br>
-      <i class="fa-solid fa-mobile-screen-button"></i>+251910643449<br>
-      <i class="fa-solid fa-mobile-screen-button"></i>+251911707352<br>
-      <i class="fa-solid fa-mobile-screen-button"></i>+251912130939<br>
-          <br><i class="fa-solid fa-envelope"></i>afrisourceminerals@gmail.com
-    </p>
+          <a href="index2.html"><i class="fa-brands fa-telegram"></i></a>
+    
+        </p>
+      </div>
+
+    <div class="cont2">
+      <nav>
+        <ul>
+          <li class="ho"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="index2.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        
+        </ul>
+      </nav>
+    </div>
+
   </section>
-  <hr>
-    <p>Copyright &copy; 2023 Afrisource Minerals and Farm PLC
-      <br><a href="https://natnahom.github.io" target="_blank"> Developed by Natnahom Asfaw</a>
-    </p>
+  <div class="cont3">
+    <div class="input-field">
+      <input type="text" id="name" name="name" placeholder="Your name">
+    </div>
+    <div class="input-field">
+      <textarea id="comment" name="comment" placeholder="Your comment"></textarea>
+    </div>
+    <div class="input-field">
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+
   </footer>
+  <div class="copyright"><a href="https://natnahom.github.io" target="_blank"><p>Copyright &copy; 2024 Afrisource Minerals and Farm PLC</a></div>
+
+    <script>
+    
+      let btn = document.querySelector(".toggle");
+          btn.addEventListener("click", function(){
+              let righttUl = document.querySelector(".right-ul");
+              if(righttUl.style.display === "none"){
+                  righttUl.style.display = "block";
+              } else {
+                 righttUl.style.display = "none";
+              }
+          })
+ 
+     </script>
+ 
 </body>
 </html>
