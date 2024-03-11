@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 body{
   background-color: rgb(15, 11, 11);
@@ -25,7 +26,7 @@ header {
   color: #f2f2f2;
   text-align: center;
   height: 80vh;
-  background-image: url(images/contactBack.jpg);
+  background-image: url(images/mineral-backgr.png);
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -144,16 +145,194 @@ nav#nav:hover{
   transition: 0.5s;
 }
 
-.fa-solid{
-  color: rgb(162, 145, 145);
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin: -8px;
+  }
+
+  footer a{
+    color: #777;
+    text-decoration: none;
+  }
+  footer a:hover{
+    color: red;
+  }
+
+  /*Layer index2*/
+  .layer{
+    background: transparent;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
 }
+
+.layer h3{
+  color: #222222;
+}
+
+.layer:hover{
+    background: white;
+}
+.layer p{
+    width: 100%;
+    font-weight: 400;
+    color: #222222;
+    font-size: 15px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    opacity: 0;
+    transition: 0.5%;
+}
+.layer:hover p{
+    bottom: 0;
+    opacity: 1;
+}
+
+.dividerD{
+    width: 100%;
+    height: 30vh;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hero {
+    color: #fff;
+    text-align: center;
+    padding: 200px 20px;
+    height: 5vh;  
+}
+  
+  .content {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+  }
+
+  .content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+  }
+  
+  .hero h1{
+    font-size: 50px;
+  }
+
+  .container h2 {
+    color: #333;
+  }
+
+  #services{
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .service-icon {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .service-icon i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    display: block;
+    border: 1px solid rgb(172, 3, 3);
+    border-radius: 50%;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(172, 3, 3);
+    margin: 0 auto;
+  }
+  
+  .serviceheader {
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1.3px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .servicesText{
+    font-family: 'Poppins';
+  }
+
+  .testimonials{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+  }
+
+  .testim{
+    border: 1px solid #000;
+    border-radius: 15px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 10px 12px rgba(0,0,0,0.5);
+  }
+
+  .testimonial-slider {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .testimonial {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .testimonial p {
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: 'Great Vibes', 'Helvetica Neue', 'Helvetica';
+  }
+  
+  .testimonial .author {
+    font-weight: bold;
+    font-size: 26px;
+  }
+  
+  .testimonial.active {
+    opacity: 1;
+  }
 
 footer {
   background-color: rgb(15, 11, 11);
   color: #fff;
   margin: -8px;
   max-height: 100vh;
-  text-align: center;
 }
 
 footer h2{
@@ -197,10 +376,6 @@ footer a{
 }
 footer a:hover{
   color: red;
-}
-
-.cont1{
-  margin-top: 100px;
 }
 
 .cont2{
@@ -295,12 +470,9 @@ transition: 1s;
 
 .fa {
 font-size: 15px;
-transition: 1s;
 }
-
 .fa-brands{
 font-size: 15px;
-transition: 1s;
 }
 
 .fa:hover {
@@ -313,8 +485,12 @@ color: rgb(172, 3, 3);
 transition: 1s;
 }
 
+.fa-solid{
+color: #777;
+}
+
 .fa-facebook {
-margin-top: 50px;
+margin-top: 30px;
 color: #335ff0;
 }
 
@@ -332,9 +508,25 @@ color: red;
 
 .fa-telegram {
 color: #3dafa5;
-} 
-  
-  @media (max-width: 765px){
+}
+
+.copyright{
+text-align: right;
+font-family: 'Poppins';
+border-top: 1px solid #888;
+}
+
+.copyright a{
+font-weight: bold;
+text-decoration: none;
+color: #888;
+}
+
+.copyright a:hover{
+color: rgb(172, 3, 3);
+}
+
+@media (max-width: 765px){
 
     header img{
       width: 350px; 
@@ -372,30 +564,39 @@ color: #3dafa5;
       display: block;
   }
 
-    footer{
-      display: block;
-      min-height: 190vh;
-      text-align: center;
-    }
-
-    .cont1{
-      text-align: center;
-      position: absolute;
-    }
-
-    .cont1 h2{
-      margin-left: 80px;
-    }
-
-    .cont2{
-      position: relative;
-      top: 350px;
-    }
-
-    .cont3 {
-      position: relative;
-      float: none;
-      top: 750px;
-    }
-  
+  #services{
+    display: block;
   }
+
+  footer{
+    display: block;
+    min-height: 190vh;
+    text-align: center;
+  }
+
+  .cont1{
+    text-align: center;
+    position: absolute;
+  }
+
+  .cont1 h2{
+    margin-left: 80px;
+  }
+
+  .cont2{
+    position: relative;
+    top: 350px;
+  }
+
+  .cont3 {
+    position: relative;
+    float: none;
+    top: 750px;
+  }
+
+  .copyright{
+    text-align: center;
+
+  }
+ 
+}

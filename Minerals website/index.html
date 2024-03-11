@@ -5,26 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Afrisource Minerals and Farm PLC</title>
   <script src="https://kit.fontawesome.com/8693f8f216.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
+    <div class="outer">
     <div class="toggle"><i class="fa-solid fa-bars"></i></div>
     
     <nav id="nav">
      <ul class="left-ul">
          <li><a href="index.html"><img src="images/logo.png" alt="logo" width="20px" height="20px"></a></li>
      </ul>
+     
      <ul class="right-ul">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="index2.html">Services</a></li>
         <li><a href="contact.html">Contact Us</a></li>
      </ul>
     </nav>
     <a href="index.html"><img src="images/logo full.png"></a>
 
+    <div class="heaWrite" data-aos="fade-up"  data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <h1>Unearth the Beauty: Discover Nature's <br>Hidden Gems</h1>
+    </div>
+
+    <a href="index2.html" style="--clr:#ac0303" class="viewP"><span>View products</span>
+    <i></i>
+    </a>
+    
+  </div>
   </header>
   
   <hr>
@@ -32,8 +45,9 @@
   <hr>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>Afrisource Minerals And Farm PLC is a leading mining, 
+    <div class="about2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+    <h2 data-aos="fade-up"><a href="about.html">About Us</a></h2>
+    <p data-aos="fade-right">Afrisource Minerals And Farm PLC is a leading mining, 
       farming, and mineral export company based in Ethiopia. 
       With extensive expertise in the industry, we specialize 
       in mining and exporting a wide range of minerals, such as 
@@ -41,39 +55,19 @@
       iron ore, lead, zinc, nickel and many more. Our dedication 
       to excellence has made us a trusted name in the market.
 
-      We pride ourselves on our strong commitment to sustainable 
-      practices and responsible sourcing. Our operations are 
-      carried out with utmost care for the environment and local 
-      communities. We believe in creating value not just for our 
-      business but also for the people we work with.
-
-      As a global player in the mining industry, we have established 
-      strong relationships with partners worldwide. This enables us 
-      to efficiently meet the demands of customers across different markets. 
-      Our efficient production processes ensure timely delivery and 
-      high-quality products.
-
-      At Afrisource Minerals And Farm PLC, our goal is to contribute 
-      to the development of Ethiopia's mining sector while adhering to 
-      international standards. We constantly strive for innovation and 
-      continuous improvement to provide our clients with top-notch products 
-      and services.
-
-      With our solid reputation built on integrity and professionalism, 
-      we are committed to being at the forefront of the mining industry 
-      both locally and globally.
     </p>
+    <a href="about.html" style="--clr:#ac0303" class="viewP"><span>Learn more</span><i></i>
+    </a>
+  </div>
     
-    <div class="row">
+    <div class="row2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <div class="course-col2">
-         <img src="images/mining2.webp" alt="Mineral 1">
+        <img src="images/mining3.webp" alt="Mineral 1" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+     </div>
+      <div class="course-col3">
+         <img src="images/mining2.webp" alt="Mineral 2">
       </div>
-      <div class="course-col2">
-         <img src="images/mining3.webp" alt="Mineral 2">
-      </div>
-      <div class="course-col2">
-         <img src="images/mining4.webp" alt="Mineral 3">
-      </div>
+
     </div>
     </section>
   <hr>
@@ -81,7 +75,7 @@
   <hr>
 
     <section class="vid-head">
-      <div class="vid-h">
+      <div class="vid-h"  data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <video controls src="images/min-vid.mp4" ></video>
       </div>
 
@@ -91,7 +85,8 @@
     <hr>
   
   <section class="course">
-    <h1> Our products </h1>
+    <h1 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <a href="index2.html">Our products</a></h1>
     
 <div class="row">
   <a href="index2.html"><div class="course-col">
@@ -176,7 +171,7 @@
       <nav>
         <ul>
           <li class="ho"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="index2.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
         
@@ -186,19 +181,24 @@
 
   </section>
   <div class="cont3">
+    <form>
     <div class="input-field">
-      <input type="text" id="name" name="name" placeholder="Your name">
+      <input type="text" id="name" name="name" placeholder="Your name" required>
     </div>
     <div class="input-field">
-      <textarea id="comment" name="comment" placeholder="Your comment"></textarea>
+      <input id="email" name="email" placeholder="Email" required>
+    </div>
+    <div class="input-field">
+      <textarea id="comment" name="comment" placeholder="Your comment" required></textarea>
     </div>
     <div class="input-field">
       <input type="submit" value="Submit">
     </div>
+    </form>
   </div>
 
   </footer>
-  <div class="copyright"><a href="https://natnahom.github.io" target="_blank"><p>Copyright &copy; 2024 Afrisource Minerals and Farm PLC</a></div>
+  <div class="copyright"><a href="https://natnahom.github.io" target="_blank">Copyright &copy; 2024 Afrisource Minerals and Farm PLC</a></div>
 
     <script>
     
@@ -211,8 +211,12 @@
                  righttUl.style.display = "none";
               }
           })
- 
+        
      </script>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script>
  
 </body>
 </html>
