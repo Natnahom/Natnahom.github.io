@@ -258,7 +258,7 @@ body {
   .hero2 p{
     font-size: 20px;
     font-family: 'Poppins';
-    font-weight: 400;
+    font-weight: bold;
     color: rgb(172, 3, 3);
     width: 400px;
   }
@@ -364,9 +364,9 @@ body {
 }
 
 #about p{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: rgb(172, 3, 3);
-  font-weight:400;
+  font-weight:bold;
   font-size: 20px;
 }
 

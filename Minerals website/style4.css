@@ -227,6 +227,7 @@ footer {
   .content p{
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
+    font-weight: bold;
   }
   
   .hero h1{
@@ -274,7 +275,7 @@ footer {
   }
 
   .servicesText{
-    font-family: 'Poppins';
+    font-family: Helvetica, Arial, sans-serif;
   }
 
   .testimonials{
