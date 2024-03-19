@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/8693f8f216.js" crossorigin="anonymous"></script>
+    <title>Blog - Afrisource Minerals and Farm PLC</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
-
 body{
-  background-color: rgb(15, 11, 11);
+  /* background-color: rgb(15, 11, 11); */
+  background: #f2f2f2;
 }
 
 ::selection {
@@ -35,8 +43,8 @@ header {
   background-color: #f2f2f2;
   color: #f2f2f2;
   text-align: center;
-  height: 120vh;
-  background-image: url(images/powerfulGemsBack.jpg);
+  height: 105dvh;
+  background-image: url(resources/blog-img1.jpg);
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -48,7 +56,7 @@ header {
   left: 0;
   right: 0;
   width: 100%;
-  height: 120vh;
+  height: 105vh;
   background: rgba(0,0,0,0.2);
 }
 
@@ -155,102 +163,38 @@ nav#nav:hover{
   transition: 0.5s;
 }
 
-.hero {
-    color: rgb(172, 3, 3);
-    text-align: center;
-    font-size: 50px;
-    padding: 200px 20px;
-    height: 5vh;  
-  }
+.blog-section{
+  margin-top: 100px;
+  min-height: 100vh;
+}
 
-  table{
-    background: #f2f2f2;
-    width: 100%;
-    min-height: 2000px;
-  }
+.blog-section h1{
+  font-size: 55px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: rgb(172, 3, 3);
+  text-transform: uppercase;
+}
 
-  table tr td {
-    vertical-align: top;
-  }
-  
-  .sticky {
-    position: sticky!important;
-    top: 87px;
-  }
+.uploaded-blog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .gems-section h2{
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(172, 3, 3);
-  }
+.uploaded-blog img{
+  width: 500px;
+  height: 300px;
+}
 
-  .gems-section p{
-    color: #000;
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+.uploaded-blog p{
+  width: 500px;
+  height: 300px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-  .gems-sec2{
-    width: 170px;
-  }
-
-  .gems-list{
-    width: 250px;
-    top: 100px; /* Adjust the top value as needed */
-    left: 15%; /* Adjust the left value as needed */
-    background-color: #f2f2f2;
-    padding: 10px;
-    z-index: 999;
-  }
-
-  .gems-list ul{
-    list-style: none;
-  }
-
-  .gems-list h3{
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .gems-section img{
-    border-radius: 15px;
-    transition: 0.5s;
-  }
-
-  .gems-section img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    }
-
-  .gems-list a{
-    width: 300px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    margin-top: 80px;
-  }
-
-  .gems-list a.active{
-    color: rgb(172, 3, 3);
-  }
-
-  /* Map */
-  .map{
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #f2f2f2;
-  }
-
-  .map iframe{
-    width: 100%;
-    height: 100%;
-  }
-  
-    footer {
+footer {
       background-color: #333;
       color: #fff;
       text-align: center;
@@ -513,64 +457,68 @@ nav#nav:hover{
   color: rgb(172, 3, 3);
 }
 
+.copyright .adm:hover{
+    color: #888;
+    cursor:auto;
+}
+
 @media(max-width: 765px){
  
-  header h1{
-    font-size: 60px;
-  }
+ header img{
+   width: 350px; 
+   height: 150px;
+ }
 
-  header img{
-    width: 350px; 
-    height: 150px;
-  }
-
-  nav#nav {
-    padding: 0 0;
+ nav#nav {
+   padding: 0 0;
 }
 .right-ul li {
-    float: right;
-    display: block;
+   float: right;
+   display: block;
 }
 
 .left-ul li {
-    display: block;
+   display: block;
 }
 
 .left-ul li a {
-    padding-left: 10px;
+   padding-left: 10px;
 }
 
 .right-ul {
-  margin-top: 80px;
-  margin-right: 20px;
-  display: none;
+ margin-top: 80px;
+ margin-right: 20px;
+ display: none;
 }
 
 .right-ul li a {
-  background: transparent;
-  backdrop-filter: blur(20px);
-    width: 260px;
-    margin-top: 10px;
-  }
+ background: transparent;
+ backdrop-filter: blur(20px);
+   width: 260px;
+   margin-top: 10px;
+ }
 
 .toggle {
-    display: block;
+   display: block;
 }
 
-.hero {
-    font-size: 35px;
+.blog-section h1{
+  font-size: 35px;
 }
 
-.gems-list{
-    display: none;
+.uploaded-blog img{
+  width: 320px;
+  height: 300px;
 }
 
-.gems-sec2{
-    display: none;
+.uploaded-blog p{
+  width: 320px;
+  height: 300px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-  footer{
-    min-height: 190vh;
+footer{
+    min-height: 230vh;
     grid-template-columns: auto;
     grid-row: auto auto auto;
     text-align: center;
@@ -587,5 +535,141 @@ nav#nav:hover{
     float: none;
     margin: 0;
   }
-  
+ 
 }
+    </style>
+</head>
+<body>
+<header>
+        <div class="outer">
+        <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+        
+        <nav id="nav">
+         <ul class="left-ul">
+             <li><a href="index.html"><img src="images/logo.png" alt="logo" width="20px" height="20px"></a></li>
+         </ul>
+         
+         <ul class="right-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index2.html">Services</a></li>
+            <li><a href="powerfulGems.html">Powerful Gemstones</a></li>
+            <li><a href="blog.php">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+        </nav>
+        <h1 data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <a href="blog.php">Blog</a>
+        </h1>
+      </div>
+
+      </header>
+
+      <section class="blog-section">
+        <h1>Afrisource minerals and farm</h1>
+
+    <?php
+// Define the path to the data file
+$dataFile = 'uploadingDiv/data.txt';
+$imageDirectory = 'uploadingDiv/';
+
+// Read the data from the file and display the divs
+if (file_exists($dataFile)) {
+   $lines = file($dataFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+   foreach ($lines as $line) {
+       $data = explode('|', $line);
+       $imageName = $data[0];
+       $imageDescription = $data[1];
+
+       echo '<div class="uploaded-blog">';
+       echo '<img src="' . $imageDirectory . $imageName . '" alt="' . $imageDescription . '">';
+       echo '<p>' . $imageDescription . '</p>';
+       echo '</div>';
+
+   }
+}
+?>
+
+      </section>
+
+<footer>
+    <div id="contact">
+      <div class="cont1">
+      <h2><a href="contact.html">Contact Us</a></h2>
+      <p>If you have any questions or inquiries, please contact us at <br><br><br>
+            
+        <i class="fa-solid fa-mobile-screen-button"></i>+251910643449<br>
+        <i class="fa-solid fa-mobile-screen-button"></i>+251911707352<br>
+        <i class="fa-solid fa-mobile-screen-button"></i>+251912130939<br><br>
+            <br><i class="fa-solid fa-envelope"></i>afrisourceminerals@gmail.com<br><br>
+            <a href="https://www.facebook.com/p/Afrisource-Minerals-And-Farming-100068401151938/?locale=sl_SI" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/afrisource-minerals-and-farm-plc" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/afrisource_minerals/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@afrisource.minera" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+  
+      
+          </p>
+        </div>
+  
+      </div>
+  
+      <div class="cont-wrap2">
+    <div class="cont2">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index2.html">Services</a></li>
+          <li><a href="powerfulGems.html">Gemstones</a></li>
+          <li class="ho"><a href="blog.php">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+    <div class="cont3">
+      <form action="https://formspree.io/f/xqkrbrdw" method="POST">
+      <div class="input-field">
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="input-field">
+        <input id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="input-field">
+        <textarea id="comment" name="comment" placeholder="Your comment" required></textarea>
+      </div>
+      <div class="input-field">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+  
+    </footer>
+    <div class="copyright"><a href="admin.php" class="adm">Copyright</a><a href="https://natnahom.github.io" target="_blank"> &copy; 2024 Afrisource Minerals and Farm PLC</a></div>
+  
+
+<!--Fade animations-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+    
+    let rightUl = document.querySelector(".right-ul");
+        
+        let btn = document.querySelector(".toggle");
+        btn.addEventListener("click", function(){
+            if(rightUl.style.display === "none"){
+                rightUl.style.display = "block";
+            } else {
+                rightUl.style.display = "none";
+            }
+        });
+          
+       </script>
+</body>
+</html>

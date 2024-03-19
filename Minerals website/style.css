@@ -75,16 +75,40 @@ body {
 
   header .heaWrite{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   header h1{
-    margin-top: 100px;
+    margin-top: 30px;
+    margin-bottom: 0;
     font-family: 'Montserrat';
-    margin-bottom: 100px;
-    text-shadow: 12px 14px 5px rgba(255, 255, 255, 0.2), 13px 15px 5px rgb(172, 3, 3);;
+    text-shadow: 0 10px 10px rgb(172, 3, 3);
+    transform:matrix(1 0 20px 1);
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top:120px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(resources/back1.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: bak 15s linear infinite;
   }
+
+  header p{
+    font-size: 18px;
+    margin-bottom: 70px;
+    width: 450px;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+@keyframes bak{
+    100%{
+        background-position: 2000px 0;
+    }
+}
 
   .viewPcont{
     display: flex;
@@ -158,10 +182,6 @@ body {
     transform: scale(1.01);
   }
 
-  .vid-h video{
-    width: 700px;
-    height: 600px;
-  }
   nav#nav {
     width: 100%;
     height: 65px;
@@ -260,11 +280,15 @@ body {
     align-items: center;
   }
 
+  .hero2 h1{
+    color: rgb(172, 3, 3);
+  }
+
   .hero2 p{
     font-size: 20px;
     font-family: 'Poppins';
     font-weight: bold;
-    color: rgb(172, 3, 3);
+    color: #000;
     width: 400px;
   }
 
@@ -302,15 +326,29 @@ body {
   }
 
   .gallery-wrap i{
-    color: rgb(172, 3, 3);
-    border: 2px solid rgb(172, 3, 3);
-    border-radius: 50%;
     font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(172, 3, 3);
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  .gallery-wrap i:hover{
+    transform: scale(1.05);
   }
 
   .gallery-wrap #backBtn, .gallery-wrap #nextBtn{
     cursor: pointer;
     margin: 40px;
+  }
+
+  .gallery-wrap #backBtn{
+    border-radius: 10px 0 0 10px;
+  }
+
+  .gallery-wrap #nextBtn{
+    border-radius: 0 10px 10px 0;
   }
 
   .gallery div img:hover{
@@ -361,7 +399,7 @@ body {
 }
 
 #about a{
-  color: #fff;
+  color: rgb(172, 3, 3);
   text-decoration: none;
 }
 #about a:hover{
@@ -369,9 +407,8 @@ body {
 }
 
 #about p{
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  color: rgb(172, 3, 3);
-  font-weight:bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000;
   font-size: 20px;
 }
 
@@ -384,36 +421,154 @@ body {
   box-shadow: 10px 20px 22px rgba(0, 0, 0, 0.5);
 }
 
-.course-col2 img{
-  width: 300px;
-  height:250px;
-  border-radius: 15px;
-  margin-top: 80px;
-  margin-right: 170px;
-  margin-left: 100px;
+.row2 .slideshow-container {
+  position: relative;
+  width: 600px;
+  margin: auto;
+}
 
+.row2 .slide {
+  display: none;
 }
-.course-col3 img{
-  width: 300px;
-  height:250px;
-  border-radius: 15px;
-  margin-top: 50px;
-  margin-right: 170px;
-  margin-left: 100px;
+
+.row2 .slide img {
+  width: 500px;
+  height: auto;
 }
+
   section {
     padding: 20px;
     text-align: center;
   }
 
   .vid-head{
-    margin: -8px;
-    background-size: 400px;
-    background-color: #777;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 20px;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
   }
   .vid-h video{
-    border: 1px solid #fff;
-    height: 500px;
+    background: #333;
+    width: 700px;
+    height: 400px;
+  }
+
+  /* Industry Expertise Section */
+  .expertise-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .expertise-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .expertise-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(172, 3, 3);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .expertise-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .expertise-list-item {
+    margin: 0 20px;
+  }
+
+  .expertise-icon {
+    font-size: 48px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+
+  .expertise-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(172, 3, 3);
+    margin-bottom: 10px;
+  }
+
+  .expertise-description {
+    font-size: 14px;
+    color: #555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  #services{
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #services h1{
+    font-size: 35px;
+    color: rgb(172, 3, 3);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .services1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    gap: 50px;
+  }
+
+  .service-icon {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .service-icon i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    display: block;
+    border: 1px solid rgb(172, 3, 3);
+    border-radius: 50%;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(172, 3, 3);
+    margin: 0 auto;
+  }
+  
+  .serviceheader {
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1.3px;
+    color: rgb(172, 3, 3);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .servicesText{
+    width: 350px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   /*-----parts-----*/
@@ -432,7 +587,6 @@ body {
 .course h1{
   width: 410px;
   font-size: 50px;
-  color: white;
   font-family: 'Open sans', sans-serif;
 }
 
@@ -451,7 +605,7 @@ body {
 }
 
 .course h1 a{
-  color: #fff;
+  color: rgb(172, 3, 3);
   text-decoration: none;
 }
 .course a:hover{
@@ -460,6 +614,13 @@ body {
 
 .course h2{
   color: white;
+}
+
+.course h4{
+  width: 410px;
+  color: #ddd;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p{
@@ -493,6 +654,7 @@ p{
 .course-col h3{
   color: red;
   font-family: 'Open sans', sans-serif;
+  text-transform: uppercase;
   font-size: 25px;
 }
 
@@ -526,6 +688,7 @@ h3{
 
   .hero{
     background-color: #f2f2f2;
+    color: rgb(172, 3, 3);
     font-size: 35px;
     font-family: 'Open Sans', sans-serif;
   }
@@ -580,6 +743,71 @@ h3{
   
   .testimonial.active {
     opacity: 1;
+  }
+
+  .testimonials .fa{
+    color: rgb(250, 212, 0);
+  }
+
+  /* FAQs */
+
+  .faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+  }
+
+  .faq-container h1{
+    color: rgb(172, 3, 3);
+    font-size: 35px;
+    font-family: 'Open sans', sans-serif;
+    margin-bottom: 80px;
+  }
+
+  .faq-question {
+    /* width: 500px; */
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 5px;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+  }
+
+  .faq-answer {
+    /* width: 500px; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-bottom: 10px;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .faq-answer.show {
+    max-height: 1000px;
+  }
+
+  .faq-question::after {
+    content: '▼';
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+  }
+
+  .faq-question.collapsed::after {
+    transform: translateY(-50%) rotate(-180deg);
+    color: rgb(172, 3, 3);
   }
 
   /* Map */
@@ -810,7 +1038,7 @@ h3{
 }
 
 @media(max-width: 765px){
-  
+
   header img{
     width: 350px; 
     height: 150px;
@@ -848,6 +1076,11 @@ h3{
     display: block;
 }
 
+header p{
+  font-size: 15px;
+  width: 350px;
+}
+
 .viewP {
   font-size: 18px;
 }
@@ -877,25 +1110,38 @@ h3{
 
 }
 
-.course-col2 img{
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+.row2 .slideshow-container {
+  position: relative;
+  width: 200px;
+  margin: auto;
 }
 
-.course-col3 img{
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+.row2 .slide img {
+  width: 200px;
+  height: auto;
 }
 
+  .vid-head{
+    display: flex;
+    flex-direction: column;
+  }
   .vid-h video{
-    width: 300px;
-    height: 600px;
+    width: auto;
+    height: 500px;
   }
 
   .row{
       flex-direction: column;
+    }
+
+    .expertise-list{
+      display: block;
+    }
+
+    .services1{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
     }
 
     .course{
@@ -906,6 +1152,13 @@ h3{
 
     .course h1{
       font-size: 35px;
+    }
+    .course h1:hover::after{
+      width: 315px;
+    }
+
+    .course h4{
+      font-size: 25px;
     }
 
     .hero h1{

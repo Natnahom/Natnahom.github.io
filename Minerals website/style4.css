@@ -252,6 +252,12 @@ footer {
     grid-template-rows: auto auto auto;
   }
 
+  #services h1{
+    font-size: 35px;
+    color: rgb(172, 3, 3);
+    font-family: 'Open Sans', sans-serif;
+  }
+
   .service-icon {
     text-align: center;
     margin-top: 15px;
@@ -275,12 +281,12 @@ footer {
     font-size: 18px;
     font-weight: 200;
     letter-spacing: 1.3px;
-    color: #333;
+    color: rgb(172, 3, 3);
     font-family: 'Open Sans', sans-serif;
   }
 
   .servicesText{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   .about-ceo{
@@ -289,6 +295,10 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 20px;
+  }
+
+  .about-ceo h3{
+    color: rgb(172, 3, 3);
   }
 
   .about-ceo2{
@@ -319,7 +329,7 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-family: Helvetica, Arial, sans-serif;
     border-radius: 50%;
-    color: rgb(172, 3, 3);
+    color: #222;
   }
 
   .testimonials{
@@ -372,6 +382,10 @@ footer {
   
   .testimonial.active {
     opacity: 1;
+  }
+
+  .testimonials .fa{
+    color: rgb(250, 212, 0);
   }
 
   p{

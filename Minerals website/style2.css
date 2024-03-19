@@ -172,14 +172,14 @@ nav#nav:hover{
 
 .about-mineralT h3{
   font-size: 25px;
+  color: rgb(172, 3, 3);
   text-transform: uppercase;
 }
 
 .about-mineralD p{
   width: 50%;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  color: rgb(172, 3, 3);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000;
 }
 
 .about-mineralD{
