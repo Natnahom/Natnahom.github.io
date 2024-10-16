@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 5px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #333333;
-  border-radius: 10px;
-}
 
 *{
     padding: 0px;
@@ -241,6 +227,8 @@
   }
 
   .auction-details p {
+    color: #070000;
+    font-weight: bold;
    margin: 0;
    font-size: 18px;
    word-spacing: 3px;
@@ -312,10 +300,14 @@
   }
 
   .foot p{
+    color: #070000;
+    font-weight: bold;
     font-family: 'Poppins';
   }
 
   .foot-bar-lists{
+    color: #070000;
+    font-weight: bold;
     text-align: center;
     justify-content:center;
     align-items: center;
@@ -325,7 +317,6 @@
     padding-left: 60px;
     padding-right: 80px;
     text-decoration: none;
-    color: #333;
     display: flex;
   }
 
@@ -391,12 +382,14 @@
 
   .foot{
     display: block;
+    height: 110vh;
   }
   #contact{
+
     padding-top: 0px;
     padding-bottom: 100px;
   }
   .foot-bar-lists{
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 }

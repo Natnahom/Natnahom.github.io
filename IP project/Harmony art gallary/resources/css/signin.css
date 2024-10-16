@@ -26,6 +26,7 @@ body{
 }
 
 .textBox{
+    color: #fff;
     background-color: rgba(95, 53, 53, 0.399);
     height: 25px;
 }

@@ -1,16 +1,5 @@
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 body {
   font-family: Arial, sans-serif;
@@ -49,9 +38,10 @@ h2:hover {
 }
 
 p {
+  font-weight: bold;
   line-height: 1.6;
   margin-bottom: 20px;
-  font-family: 'Poppins';
+  font-family:'Poppins';
 }
 
 .container {
@@ -64,11 +54,12 @@ p {
 }
 
 .container li{
+  font-weight: bold;
   font-family: 'Poppins';
 }
 
 .logos {
-  display: block;
+  display: flex;
   margin: 0 auto;
   max-width: 300px;
 }
